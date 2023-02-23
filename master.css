@@ -1,0 +1,140 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+}
+.container{
+    background-color: #000;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    width: 80%;
+    padding: 20px 0;
+}
+.container .logo{
+    width: 40px;
+}
+.container .nav{
+    display: flex;
+    gap: 15px;
+}
+.container .nav li{
+    list-style: none;
+
+}
+.container .nav li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 7px;
+    transition: 0.3s;
+    position: relative;
+}
+.container .nav li a:hover{
+    background-color: aqua;
+    color: #000;
+   
+}
+
+
+
+.container .content{
+width: 80%;
+display: flex;
+align-items: center;
+margin: auto;
+justify-content: space-between;
+}
+.container .content .text{
+color: white;
+max-width: 40%;
+}
+.container .content .text h2{
+    font-size: 40px;
+    text-transform: uppercase;
+}
+.container .content .text p{
+    font-size: 18px;
+    margin: 20px 0 30px;
+    letter-spacing: -1;
+    line-height: 1.5;
+    
+}
+.container .content .text a{
+    background-color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #000;
+    margin-top: 20px;
+    transition: 0.3s;
+    text-transform: capitalize;
+}
+.container .content .text a:hover{
+    background-color: aqua;
+    color: white;
+}
+.container .content .image{
+    max-width: 30%;
+}
+.container .content .image img{
+    max-width: 100%;
+}
+.container .images{
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.container .images img{
+    width: 50px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.container .images img:hover{
+    transform: scale(1.3);
+}
+
+
+@media(max-width:679px){
+
+    .container .content .text h2{
+        font-size: 35px;
+    }
+
+    .container .images img{
+        width: 35px;
+    }
+    
+    .container .content{
+        margin-top: 70px;
+    }
+
+    .container .images{
+        bottom: 50px;
+    }
+
+    .container .nav{
+        gap: 0px;
+    }
+
+    .container .header{
+        overflow: hidden;
+    }
+
+    .container .nav li a{
+        padding: 8px 5px;
+    }
+
+    .container .content .image{
+        max-width: 45%;
+    }
+}
