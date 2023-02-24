@@ -111,19 +111,20 @@ max-width: 40%;
     }
 
     .container .images img{
-        width: 35px;
+        width: 30px;
     }
     
     .container .content{
-        margin-top: 70px;
+        margin-top: 20px;
     }
 
     .container .images{
-        bottom: 50px;
+        bottom: 30px;
     }
 
     .container .nav{
-        gap: 0px;
+        flex-direction: column;
+        gap: 5px;
     }
 
     .container .header{
@@ -131,10 +132,14 @@ max-width: 40%;
     }
 
     .container .nav li a{
-        padding: 8px 5px;
+        padding:5px;
+    }
+    .container .content .text a{
+        width: 40px;
+    }
+    .container .images{
+        right: 10px;
+        transform: translateX(0);
     }
 
-    .container .content .image{
-        max-width: 45%;
-    }
 }
